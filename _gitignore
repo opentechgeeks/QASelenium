@@ -1,0 +1,49 @@
+# Java
+*.class
+
+# Maven
+target/
+
+# Old paths
+Selenium Lowes Framework/
+javamail1_4_5/
+eclipse/
+selenium-java-2.39.0/
+selenium-java-2.39.0.zip
+Javalibs/
+Results/
+
+# Misc
+*.log
+drivers/phantomjs*/
+
+# ---- Mac OS X
+.DS_Store?
+Icon?
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# ---- Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Eclipse
+.apt_generated/
+.settings/
+.project
+.classpath
+
+# JRebel
+rebel.xml
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+

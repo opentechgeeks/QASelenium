@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.lowes.qa</groupId>
+	<artifactId>lowes-qa-selenium</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Lowes.com Selenium Tests</name>
+	<parent>
+		<groupId>com.lowes</groupId>
+		<artifactId>lowes-parent</artifactId>
+		<version>1.0.3</version>
+	</parent>
+	<organization>
+		<name>Lowe's Companies, Inc.</name>
+		<url>http://www.lowes.com</url>
+	</organization>
+	<url>http://vmlnxbandd.lowes.com/</url>
+	<scm>
+		<url>http://vmlnxgit.lowes.com/qa/lowes-qa-selenium/</url>
+		<connection>scm:git:git@vmlnxgit.lowes.com:qa/lowes-qa-selenium.git</connection>
+		<developerConnection>scm:git:git@vmlnxgit.lowes.com:qa/lowes-qa-selenium.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://vmlnxbandd.lowes.com/jenkins/</url>
+	</ciManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.39.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.opera</groupId>
+			<artifactId>operadriver</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.detro.ghostdriver</groupId>
+			<artifactId>phantomjsdriver</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>16.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<dependency>
+			<groupId>com.saucelabs</groupId>
+			<artifactId>sauce_junit</artifactId>
+			<version>2.0.7</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>2.14.1</version>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+	</repositories>
+</project>
