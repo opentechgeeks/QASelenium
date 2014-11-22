@@ -6,20 +6,16 @@
 	<artifactId>lowes-qa-selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Lowes.com Selenium Tests</name>
-	<parent>
-		<groupId>com.lowes</groupId>
-		<artifactId>lowes-parent</artifactId>
-		<version>1.0.3</version>
-	</parent>
+	
 	<organization>
-		<name>Lowe's Companies, Inc.</name>
-		<url>http://www.lowes.com</url>
+		<name>Ravikanth</name>
+		<url>http://ravikanthmogulla.wordpress.com/</url>
 	</organization>
-	<url>http://vmlnxbandd.lowes.com/</url>
+	<url>https://github.com/opentechgeeks</url>
 	<scm>
-		<url>http://vmlnxgit.lowes.com/qa/lowes-qa-selenium/</url>
-		<connection>scm:git:git@vmlnxgit.lowes.com:qa/lowes-qa-selenium.git</connection>
-		<developerConnection>scm:git:git@vmlnxgit.lowes.com:qa/lowes-qa-selenium.git</developerConnection>
+		<url>https://github.com/opentechgeeks/QASelenium</url>
+		<connection>scm:git:git@github.com/opentechgeeks/QASelenium.git</connection>
+		<developerConnection>scm:git:git@github.com:opentechgeeks/QASelenium.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	<ciManagement>
