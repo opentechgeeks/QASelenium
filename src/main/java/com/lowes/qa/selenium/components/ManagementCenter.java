@@ -10,7 +10,6 @@ import java.util.regex.Pattern;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriverBackedSelenium;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -23,6 +22,7 @@ import com.lowes.qa.selenium.uimap.UIMapFunctionalComponents;
 import com.lowes.qa.selenium.uimap.UIMapManagementCenter;
 import com.lowes.qa.selenium.uimap.UIMapMyLowes;
 import com.thoughtworks.selenium.Selenium;
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -34,11 +34,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ManagementCenter extends ReusableLibrary
 {
 	String baseurl = dataTable.getData("General_Data", "URL");
-	Selenium selenium = new WebDriverBackedSelenium(driver, baseurl);
 	FunctionalComponents fc = new FunctionalComponents(scriptHelper);
 	ProductSearch ps=new ProductSearch(scriptHelper);
 	CheckOut_CH ch = new CheckOut_CH(scriptHelper);
-
+	Selenium selenium = new WebDriverBackedSelenium(driver, baseurl);
+	
 	public ManagementCenter(ScriptHelper scriptHelper) {
 		super(scriptHelper);
 	}

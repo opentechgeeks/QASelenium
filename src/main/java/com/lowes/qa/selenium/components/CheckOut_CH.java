@@ -1,7 +1,6 @@
 package com.lowes.qa.selenium.components;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriverBackedSelenium;
 import org.openqa.selenium.support.ui.Select;
 
 import com.cognizant.framework.Status;
@@ -11,6 +10,7 @@ import com.lowes.qa.selenium.uimap.UIMapCheckOut;
 import com.lowes.qa.selenium.uimap.UIMapFunctionalComponents;
 import com.lowes.qa.selenium.uimap.UIMapMyLowes;
 import com.thoughtworks.selenium.Selenium;
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium;
 
 
 public class CheckOut_CH extends ReusableLibrary{
